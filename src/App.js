@@ -1,9 +1,13 @@
-
+import Navbar from './components/Hero'
+import Hero from './components/Navber'
 
 function App() {
   return (
     <div>
-     <h1>Hi</h1>
+        <Hero />
+      <Navbar />
+    
+    
     </div>
   );
 }
