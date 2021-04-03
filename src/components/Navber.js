@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components/macro';
 import Img from '../assects/logo.svg';
 import { Link } from 'react-router-dom';
+import { AiOutlineFileSearch } from 'react-icons/ai';
 
 const NavbarContainer = styled.div`
   width: 100%;
@@ -60,7 +61,8 @@ const SearchWrap = styled.div`
 
 const Input = styled.input`
 color: #000;
-width: 196px;
+width: 100px;
+padding-left:20px;
 border: transparent;
 font-size: 12px;
 background: transparent;
@@ -103,10 +105,13 @@ const Navbar = () => {
           <NavLink to='/'>HELP</NavLink>
         </Nav>
         <Search>
+        
           <SearchWrap>
-            <Input type='text' placeholder='Symbol/Name' />
+          <AiOutlineFileSearch />
+            <Input type='text' placeholder='Symbol/Name'  />
           </SearchWrap>
         </Search>
+        
         <ButtonContainer>
           <Button css={'color: #037cff; background: #fff;'}>
             SIGN UP

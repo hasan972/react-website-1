@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import BgImg from '../assects/home-pic.png';
+import { BiArrowToRight } from 'react-icons/bi';
 
 const Section = styled.section`
     background-image: url(${BgImg});
@@ -61,6 +62,7 @@ function Hero() {
                         </Desc>
                         <Button href='https://facebook.com'>
                             <span>Claim your free stock now</span>
+                            <BiArrowToRight />
                         </Button>
                 </Left>
             </Content>
